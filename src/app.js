@@ -13,7 +13,7 @@ const db = require("./config/connect");
 app.use(bodyParser.json());
 
 
-const callbackurl = require('./routes/callback'); 
+const callbackurl = require('./routes/index'); 
 app.use("/api/callbackCheck", callbackurl); 
 
 const PORT = process.env.PORT || 3000;
